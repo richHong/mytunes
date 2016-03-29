@@ -7,11 +7,18 @@ var LibraryEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
+      this.model.playFirst();
       this.model.play();
       this.model.enqueue();
+      // Listen for click on song in library entry view
+       //When clicked render song with template
+       var songRow = this.render();
+       console.log('songRow',songRow);
+       //Then place <td> to the song queue table
+       //$('.songQueue').append(songRow)
+       //AppView.songQueueView.add(songRow);
     }, 
-    // 'click': function() {
-    // },
+   
   },
 
   render: function(){

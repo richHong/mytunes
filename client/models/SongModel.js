@@ -18,6 +18,14 @@ var SongModel = Backbone.Model.extend({
 
   ended: function(){
     this.trigger('ended', this);
+  },
+
+  add: function(){
+    this.trigger('add', this);
+  }, 
+
+  playFirst: function(){
+    this.trigger('playFirst', this);
   }
 
 });
