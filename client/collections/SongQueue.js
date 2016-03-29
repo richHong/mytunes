@@ -4,9 +4,9 @@ var SongQueue = Songs.extend({
   initialize: function(){
     //start enqueue method
 
-    this.on('enqueue', function(song) {
-      this.get(this).add(song)
-    });
+    // this.on('enqueue', function(song) {
+    //   this.get(this).add(song)
+    // });
 
     this.on('dequeue', function() {
       this.remove(this.at(0))
