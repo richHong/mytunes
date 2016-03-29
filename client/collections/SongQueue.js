@@ -2,6 +2,9 @@
 var SongQueue = Songs.extend({
 
   initialize: function(){
+    //start enqueue method
+    //start dequeue method
+    //start play method
   }
 
 });
