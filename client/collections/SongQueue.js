@@ -23,7 +23,6 @@ var SongQueue = Songs.extend({
   }, 
 
   playFirst: function(){
-    console.log('is this the right models', this.at(0));
     this.at(0).play();
   },
 
